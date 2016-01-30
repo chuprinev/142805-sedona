@@ -1,0 +1,151 @@
+
+body{
+	font-family: "PT Sans";
+	
+}
+
+h1{
+	
+}
+
+h2{
+	font-size: 21px;
+	line-height: 100%;
+	color: #000000;
+	font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header{
+	width: 768px;
+	min-height: 56px;
+	margin: 0 auto;
+	background-color: green;
+}
+
+header .logo{
+	position: absolute;
+	width: 138px;
+	left:50%; 
+	margin-left:-69px;
+	background-color: yellow;
+}
+
+header nav{
+	width: 676px;
+	margin: 0 auto;
+	
+	min-height: 56px;
+	background-color: black;
+	color: white;
+}
+
+header ul{
+	list-style: none outside none;
+	padding: 0;	
+}
+
+header li{
+	width: 153px;
+	min-height: 56px;
+	float: left;
+	background-color: red;
+}
+
+header li:nth-last-child(1),
+header li:nth-last-child(2){
+	background-color: blue;	
+	text-align: right;
+	
+	float: right;
+}
+
+main{
+	width: 768px;
+	margin: 0 auto;
+	
+	background-color: gray;
+}
+
+main .city_logo{
+	width: 768px;
+	height: 512px;
+	margin: 0 auto;
+	
+	background-color: orange;
+}
+
+main .city_logo div{
+	width: 352px;
+	height: 458px;
+	margin: 0 auto;
+	
+	background-color: white;
+}
+
+main .city_title{
+	width: 768px;
+	min-height: 211px;
+	margin: 0 auto;
+	
+	background-color: white;
+}
+
+main .city_informaton{
+	font-size: 0px;
+}
+
+main .city_informaton .reason{
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	min-height: 211px;
+	margin: 0 auto;
+	
+	background-color: green;
+}
+
+main .city_informaton .reason:first-of-type,
+main .city_informaton .reason:nth-of-type(5){
+	width: 768px;	
+}
+
+main .city_informaton .reason:nth-of-type(2n){
+	background-color: orange;
+	
+}
+
+main .map_hotel .hotel_offers{
+	width: 768px;
+	min-height: 291px;
+	margin: 0 auto;
+	
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
