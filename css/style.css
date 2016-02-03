@@ -21,10 +21,14 @@ h2{
 	display: inline-block;
 	vertical-align: top;
 }
-.container{
+.container_narrow{
 	width: 676px;
 	margin: 0 auto;	
 	background-color: black;
+}
+.container_wide{
+	width: 768px;
+	margin: 0 auto;
 }
 
 header{
@@ -43,8 +47,7 @@ header .logo{
 
 header nav{
 	width: 676px;
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 	min-height: 56px;
 	background-color: black;
 }
@@ -69,33 +72,30 @@ header li:nth-last-child(2){
 	float: right;
 }
 
-footer{
-	width: 768px;
-	height: 120px;
-	margin: 0 auto;
+footer{	
+	min-height: 120px;
+	font-size: 0px;
 	background-color: black;
 }
+
 footer .hashtag{
-	display: inline-block;
-	vertical-align: top;
-	width: 255px;
-	height: 120px;
-	background-color: yellow;
+	width: 33.3%;
+	min-height: 120px;
+	font-size: 21px;
 	
+	background-color: yellow;	
 }
 footer .social{
-	display: inline-block;
-	vertical-align: top;
-	width: 255px;
-	height: 120px;
+	width: 33.3%;
+	min-height: 120px;
+	font-size: 21px;
 	
 	background-color: red;
 }
 footer .copyright{
-	display: inline-block;
-	vertical-align: top;
-	width: 250px;
-	height: 120px;
+	width: 33.3%;
+	min-height: 120px;
+	font-size: 21px;
 	
 	background-color: purple;
 }
@@ -103,32 +103,33 @@ footer .copyright{
 
 
 
+
+
+
+
+
+
 main{
-	width: 768px;
-	margin: 0 auto;
-	
 	background-color: gray;
 }
-
+/*url("../img/main-logo_background.jpg"),*/
 .city_logo{	
-	width: 768px;
-	height: 512px;
-	margin: 0 auto;	
-	background-image: url("../img/main-logo_background.jpg");
+	min-height: 512px;	
+	background-image: url("../img/main-logo_mask.png"),url("../img/main-logo_background.jpg");
+	background-position: bottom, top;
+	background-repeat: no-repeat;
 	border-top: 1px solid white;
 }
 
 .city_logo .logo_word{
 	width: 458px;
-	height: 352px;
+	min-height: 352px;
 	margin: 0 auto;
 	margin-top: 75px;
 }
 
 .city_title{
-	width: 768px;
 	min-height: 211px;
-	margin: 0 auto;	
 	
 	background-color: white;
 }
@@ -152,7 +153,7 @@ main{
 
 .reason .color{
 	width: 33.3%;
-	height: 256px;
+	min-height: 256px;
 	background-color: gray;
 }
 
@@ -164,24 +165,19 @@ main{
 }
 
 .offers .search_offers{
-	width: 768px;
 	min-height: 291px;
-	margin: 0 auto;
 	
 	background-color: green;
 }
 
-.offers .map{
-	width: 768px;
-	min-height: 473px;	
-	
+.offers .map{	
 	background-color: orange;
 }
 
 .form_search{
 	display: none;
 	width: 568px;
-	height: 395px;
+	min-height: 395px;
 	margin: 0 auto;
 	
 	background-color: black;
@@ -190,7 +186,7 @@ main{
 
 .form_search .container{	
 	width: 458px;
-	height: 285px;
+	min-height: 285px;
 	margin-top: 55px;	
 	margin-left: 55px;
 	
@@ -202,83 +198,107 @@ main{
 
 
 
-.hotel_filter{	
-	height: 218px;
-	width: 768px;
+
+
+.hotel_filter{
+	min-height: 218px;
 	background-color: green;
+	font-size: 0px;
 }
 
 .hotel_ifrastructure{
-	width: 241px;
+	width: 33.3%;
 	background-color: red;
-	height: 218px;
+	min-height: 218px;
+	font-size: 21px;
 }
 
 .hotel_type{
-	width: 212px;
+	width: 33.3%;
 	background-color: blue;
-	height: 218px;
+	min-height: 218px;
+	font-size: 21px;
 }
 
 .hotel_cost{
-	width: 215px;
+	width: 33.3%;
 	background-color: yellow;
-	height: 218px;
+	min-height: 218px;
+	font-size: 21px;
 }
 
-.btn{	
+.hotel_cost .min_price{
+	width: 50px;
+}
+.hotel_cost .max_price{
+	width: 50px;
+}
+
+.btn{
 	width: 137px;
-	height: 36px;
+	min-height: 36px;
 	margin-top: 20px;
 	margin-left: 20px;
 }
 
+.hotel_result{
+	font-size: 0px;
+}
+
 .hotel_result .result{
 	width: 152px;
-	height: 86px;
+	min-height: 86px;
+	font-size: 21px;
 	background-color: yellow;	
 }
-.hotel_result .sort{
+.hotel_result_sort{
 	width: 370px;
-	height: 86px;
+	min-height: 86px;
+	font-size: 12px;
 	background-color: green;	
 }
 
-.hotel_result .sort ul{
+.hotel_result_sort ul{
 	list-style: none outside none;
 	padding: 0;	
 }
 
-.hotel_result .sort li{
+.hotel_result_sort li{
 	display: inline-block;
 	vertical-align: top;
 	margin: 20px 10px;
 }
 
 .hotel_result .sort_direction{
-	width: 146px;
-	height: 86px;
+	width: 154px;
+	min-height: 86px;
 	background-color: purple;	
 }
 
 .hotel_catalog .hotel{
-	height: 150px;
+	min-height: 150px;
+	font-size: 0px;
 	background-color: white;
 }
 
 .hotel .hotel_photo{
 	width: 151px;
-	height: 90px;
+	min-height: 90px;	
 	background-color: red;
 }
 .hotel .hotel_offer{
 	width: 371px;
-	height: 150px;
+	min-height: 150px;
+	font-size: 14px;
 	background-color: green;
+}
+.hotel_offer p{
+	font-size: 21px;
 }
 
 .hotel .rating{
-	width: 146px;
-	height: 150px;
+	width: 154px;
+	min-height: 150px;
+	font-size: 14px;
 	background-color: blue;
 }

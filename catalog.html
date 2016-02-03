@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">	
   </head>
   <body>
   
@@ -30,9 +30,9 @@
 		</nav>		
     </header>
 	
-	<main>
+	<main class="container_wide">
 		<form class="hotel_filter" method="post">
-			<div class="container">
+			<div class="container_narrow">
 			
 				<div class="hotel_ifrastructure inlineblock">
 					<p>
@@ -64,7 +64,7 @@
 				</div>
 				
 				<div class="hotel_type inlineblock">
-					<div>Инфраструктура</div>
+					<p>Инфраструктура</p>
 					<ul>
 						<li>
 							<label>
@@ -113,13 +113,13 @@
 			</div>
 		</form>
 			
-		<div class="hotel_result container">
+		<div class="hotel_result container_narrow">
 			<div class="result inlineblock">
 				Найдено:				
 				<span>3</span>				
 			</div>		
 			
-			<div class="sort inlineblock">				
+			<div class="hotel_result_sort inlineblock">				
 				<ul>
 					<li>
 						<span>Сортировка:</span>
@@ -141,7 +141,7 @@
 			</div>
 		</div>
 		
-		<section class="hotel_catalog container">
+		<section class="hotel_catalog container_narrow">
 			<div class="hotel">
 				<div class="hotel_photo inlineblock">
 					<img src="img/main-hotel_amara_resort.jpg" alt="Amara resort & spa hotel photo">
@@ -223,22 +223,22 @@
 		
 	</main>
 	
-	<footer class="footer">		
-		<div class="hashtag">
+	<footer class="container_wide">		
+		<div class="hashtag inlineblock">
 			<a href="">#VisitSedona</a>
 		</div>
 		
-		<div class="social">
-			<span>				
+		<div class="social inlineblock">
+			<span>
 				<a class="btn_social" href="#">Вконтакте</a>
 				<a class="btn_social" href="#">Фейсбук</a>
 				<a class="btn_social" href="#">Инстаграм</a>
 			</span>
 		</div>
 		
-		<div class="copyright">
+		<div class="copyright inlineblock">
 			<img src="img/footer-copyright.png" alt="логотип разработчика">
-		</div>		
+		</div>
     </footer>
 
   </body>
