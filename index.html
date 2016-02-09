@@ -5,13 +5,14 @@
     <title>HTML Academy: Седона</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">	
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
   
 	<header>
 		<div class="logo">
 			<img src="img/header-logo-city_of_sedona.png" alt="логотип">
-		</div>		
+		</div>
 		<nav class="clearfix">
 			<ul>
 				<li>
@@ -21,8 +22,8 @@
 					<a href="">Фото и видео</a>				
 				</li>
 				<li>
-					<a href="">Карта сайта</a>				
-				</li>
+					<a href="">Карта штата</a>				
+				</li>				
 				<li>
 					<a href="">Гостиницы</a>				
 				</li>
@@ -33,7 +34,7 @@
 	<main class="container_wide">
 		<section class="city_logo">			
 			<div class="logo_word">
-				<img src="img/main-logo_word.png" alt="logo">
+				<img src="img/main-logo_word1.png" alt="logo">
 			</div>
 		</section>
 		
@@ -45,7 +46,7 @@
 		<section class="city_informaton">
 			<div class="reason inlineblock">
 				<div class="color">
-					<p>Настоящий городок</p>
+					<div class="reason_title">Настоящий городок</div>
 					<p>№1</p>
 					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
@@ -55,32 +56,32 @@
 			</div>
 			
 			<div class="reason inlineblock">
-				<div>
+				<div class="icon">
 					<img src="img/main-icon_house.png" alt="house icon">
 				</div>
-				<p>Жилье</p>
+				<div class="reason_title">Жилье</div>
 				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 			</div>
 			
 			<div class="reason inlineblock">
-				<div>
+				<div class="icon">
 					<img src="img/main-icon_hamburger.png" alt="hamburger icon">
 				</div>
-				<p>Еда</p>
+				<div class="reason_title">Еда</div>
 				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 			</div>
 			
 			<div class="reason inlineblock">
-				<div>
+				<div class="icon">
 					<img src="img/main-icon_gift.png" alt="icon gift">
 				</div>
-				<p>Сувениры</p>
-				<p>Не только китайского,nно и местного производства!</p>
+				<div class="reason_title">Сувениры</div>
+				<p>Не только китайского, но и местного производства!</p>
 			</div>
 			
 			<div class="reason inlineblock">
 				<div class="color">
-					<p>Там есть мост дьявола</p>
+					<div class="reason_title">Там есть мост дьявола</div>
 					<p>№2</p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
@@ -90,19 +91,19 @@
 			</div>
 			
 			<div class="reason inlineblock">
-				<p>Небольшая площадь</p>
+				<div class="reason_title">Небольшая площадь</div>
 				<p>№3</p>
 				<p>Все достопримечательности находятся очень близко</p>
 			</div>
 			
 			<div class="reason inlineblock">
-				<p>Красивая дорога</p>
+				<div class="reason_title">Красивая дорога</div>
 				<p>№4</p>
 				<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 			</div>
 			
 			<div class="reason inlineblock">
-				<p>Мало Туристов</p>
+				<div class="reason_title">Мало Туристов</div>
 				<p>№5</p>
 				<p>Большинство едет в гранд каньон и толпится там</p>
 			</div>
@@ -110,15 +111,16 @@
 		
 		<section class="offers">
 			<div class="search_offers">
-				<p>Заинтересовались?</p>
-				<p>Укажите предпологаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<a href="">Поиск гостиницы в Седоне</a>
+				<h2>Заинтересовались?</h2>
+				<p>Укажите предпологаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>	
+				<a class = "search_offers_button" href="">Поиск гостиницы в Седоне</a>
 			</div>
 			
 			<div class="map">
 				<img src="img/main-map.jpg" alt="карта">
 			</div>
 			
+			<!-- в работе -->
 			<form class="form_search">
 				<div class="container_narrow">
 					<div>		
@@ -167,6 +169,7 @@
 					</div>
 				</div>
 			</form>
+			
 		</section>
 	</main>
 	

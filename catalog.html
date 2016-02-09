@@ -35,55 +35,55 @@
 			<div class="container_narrow">
 			
 				<div class="hotel_ifrastructure inlineblock">
-					<p>
-						Инфраструктура
-					</p>
+					<p>Инфраструктура:</p>
+					
 					<ul>
 						<li>					
-							<label>
-								<input type="checkbox"checked >
-								<span></span> 
-								Бассейн 
+							<label class="filter_checkbox">
+								<input type="checkbox" checked >
+								<span class="checkbox_indicator"></span> 
+								Бассейн
 							</label>
 						</li>
 						<li>
-							<label>
+							<label class="filter_checkbox">
 								<input type="checkbox">
-								<span></span> 
+								<span class="checkbox_indicator"></span>
 								Парковка 
 							</label>						
 						</li>
 						<li>
-							<label>
+							<label class="filter_checkbox">
 								<input type="checkbox">
-								<span></span> 
+								<span class="checkbox_indicator"></span> 
 								WI-FI
 							</label>
 						</li>
 					</ul>
 				</div>
 				
-				<div class="hotel_type inlineblock">
-					<p>Инфраструктура</p>
+				<div class="hotel_ifrastructure inlineblock">
+					<p>Тип жилья:</p>
+					
 					<ul>
 						<li>
-							<label>
+							<label class="filter_checkbox">
 								<input type="checkbox">
-								<span></span> 
+								<span class="checkbox_indicator"></span>  
 								Гостиница
 							</label>						
 						</li>
 						<li>
-							<label>
+							<label class="filter_checkbox">
 								<input type="checkbox">
-								<span></span> 
+								<span class="checkbox_indicator"></span> 
 								Мотель
 							</label>					
 						</li>
 						<li>
-							<label>
+							<label class="filter_checkbox">
 								<input type="checkbox">
-								<span></span> 
+								<span class="checkbox_indicator"></span>  
 								Апартаменты
 							</label>						
 						</li>
@@ -91,25 +91,25 @@
 				</div>
 				
 				<div class="hotel_cost inlineblock">
-					<p>Стоимость в сутки(Р):</p>
-					
 					<div class="range_filter">
+						<p>Стоимость в сутки (Р):</p>
 						<div class="price_controls">
-							от <input class="min_price" type="text" value="0">
-							до <input class="max_price" type="text" value="3000">
+							<label class="min_price">от <input type="text" name="min_price" value="0"></label>
+							<label class="max_price">до <input type="text" name="max_price" value="3000"></label>
 						</div>
+						
 						<div class="range_controls">
-							<div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
 							<div class="toggle min_toggle"></div>
 							<div class="toggle max_toggle"></div>
 						</div>            
 					</div>
 					<div>
-						<input class="btn" type="submit" value="Показать">
+						<button class="btn_transparent" type="submit">Показать</button>
 					</div>
 				</div>
-				
-				
 			</div>
 		</form>
 			
@@ -135,9 +135,10 @@
 					</li>
 				</ul>		
 			</div>
+			
 			<div class="sort_direction inlineblock">
-				<a href=""></a>
-				<a href=""></a>
+				<button class="sort_direction_down" type="button" title="Вверх"></button>
+				<button class="sort_direction_up" type="button" title="Вниз"></button>				
 			</div>
 		</div>
 		
@@ -146,26 +147,30 @@
 				<div class="hotel_photo inlineblock">
 					<img src="img/main-hotel_amara_resort.jpg" alt="Amara resort & spa hotel photo">
 				</div>
+				
 				<div class="hotel_offer inlineblock">
-					<p class="name">Amara resort & spa</p>					
+					<div class="hotel_name">Amara resort & spa</div>					
 					<div class="cost">
-						<span class="type">Гостиница</span>
+						<span class="type inlineblock">Гостиница</span>
 						От
 						<span>3500 P.</span>
 					</div>
-					<div>
-						<a class="hotel_more_info" href="">Подробнее</a>
-						<a class="hotel_reservation" href="">Забронировать</a>
+					<div class="control inlineblock">
+						<a class="control_btn" href="">Подробнее</a>
+						<a class="control_btn" href="">Забронировать</a>
 					</div>	
 				</div>
-							
+					
 				<div class="rating inlineblock">
-					<div class="star"></div>
+					<div class="star">
+						<img src="img/main-rating_star.png" alt="hotel_star">
+						<!-- Получится шириной блока или с помощью спрайтов выводить нужное количество звезд? -->
+					</div>
 					<div class="number">
 						Рейтинг												
 						<span>8,5</span>
 					</div>
-				</div>				
+				</div>
 			</div>
 			
 			<div class="hotel">
@@ -173,20 +178,22 @@
 					<img src="img/main-hotel_desert_quail_inn.jpg" alt="Desert quail inn motel photo">
 				</div>
 				<div class="hotel_offer inlineblock">
-					<p class="name">Desert quail inn</p>					
+					<div class="hotel_name">Desert quail inn</div>					
 					<div class="cost">
-						<span class="type">Мотель</span>
+						<span class="type inlineblock">Мотель</span>
 						От
 						<span>2000 P.</span>
 					</div>
-					<div>
-					<a class="hotel_more_info" href="">Подробнее</a>
-					<a class="hotel_reservation" href="">Забронировать</a>
-				</div>
+					<div class="control inlineblock">
+						<a class="control_btn" href="">Подробнее</a>
+						<a class="control_btn" href="">Забронировать</a>
+					</div>
 				</div>
 								
 				<div class="rating inlineblock">
-					<div class="star"></div>
+					<div class="star">
+						<img src="img/main-rating_star.png" alt="hotel_star">
+					</div>
 					<div class="number">
 						Рейтинг												
 						<span>8,9</span>
@@ -199,20 +206,22 @@
 					<img src="img/main-hotel_villas_at_poco_diablo.jpg" alt="Villas at poco diablo photo">
 				</div>
 				<div class="hotel_offer inlineblock">
-					<p class="name">Villas at poco diablo</p>					
+					<div class="hotel_name">Villas at poco diablo</div>					
 					<div class="cost">
 						<span class="type">Апартаменты</span>
 						От						
 						<span>4000 P.</span>
 					</div>
-					<div>
-						<a class="hotel_more_info" href="">Подробнее</a>
-						<a class="hotel_reservation" href="">Забронировать</a>
+					<div class="control inlineblock">
+						<a class="control_btn" href="">Подробнее</a>
+						<a class="control_btn" href="">Забронировать</a>
 					</div>
 				</div>
 				
 				<div class="rating inlineblock">
-					<div class="star"></div>
+					<div class="star">
+						<img src="img/main-rating_star.png" alt="hotel_star">
+					</div>
 					<div class="number">
 						Рейтинг											
 						<span>9,2</span>
