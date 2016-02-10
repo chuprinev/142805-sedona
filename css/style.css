@@ -64,22 +64,35 @@ header ul{
 header li{
 	display: inline-block;
 	vertical-align: top;
-	width: 20%;
+	width: 153px;
 }
 header li:nth-child(2){
-	width: 40%;
+	width: 185px;
+}
+header li:nth-child(3){
+	width: 185px;
+	text-align: right;
+}
+header li:nth-child(4){
+	width: 153px;
+	text-align: right;
 }
 
 header a{
 	display: block;
-	padding-top: 15.5px;
-	padding-bottom: 15.5px;
+	padding-top: 13px;
+	padding-bottom: 17px;
+	/*
+	у меня в фотошопе совершенно другие падинги и шрифт совсем по другому смотрится
+	*/
+	
+	
 	color: #000000;
 	text-decoration: none;
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: bold;
 }
 
 header a:hover {
@@ -165,29 +178,25 @@ main{
 }
 
 .city_logo{	
-	height: 512px;	
+	height: 437px;	
 	background-image: url("../img/main-logo_mask.png"),url("../img/main-logo_background.jpg");
 	background-position: bottom, top;
 	background-repeat: no-repeat;
-	
-	/*для выпадающих отступов*/
-	padding-top: 1px;
-	
-	/*не могу понять из-за какого отступа появляется полоса под логотипом */
+
+	padding-top: 76px;
 }
 
 .city_logo .logo_word{
 	width: 458px;
 	min-height: 352px;
 	margin: 0 auto;
-	margin-top: 75px;
 }
 
 .city_title{
 	background-color: white;
 	text-transform: uppercase;
 	padding-top: 55px;
-	padding-bottom: 55px;
+	padding-bottom: 50px;
 	padding-left: 139px;
 	padding-right: 139px;
 
@@ -199,12 +208,16 @@ main{
 	padding: 0px;
 	padding-left: 25px;
 	padding-right: 25px;
+	padding-bottom: 28px;
 	text-align: center;
+	font-weight: bold;
 	
 }
 .city_title p{
 	font-size: 14px;
 	line-height: 26px;
+	margin: 0px;
+	padding: 0px;
 }
 
 .city_informaton{
@@ -222,37 +235,58 @@ main{
 	text-transform: uppercase;	
 	
 	/*outline: 1px solid red;*/
+	
+	
+	text-align: center;
+	
+	font-size: 14px;
+	text-align: center;
+	line-height: 21px;
 }
 
 .reason .color{
 	width: 33.3%;
 	background-color: #81b3d2;
 	
-	padding-top: 45px;
-	padding-bottom: 41px;
+	padding-top: 46px;
+	padding-bottom: 40px;
 	color: #ffffff;
-	text-align: center;
+}
 
-	line-height: 21px;
+.reason .photo_building{
+	height: 256px;
 }
 
 .reason  p{
-	font-size: 14px;
+	margin: 0px;
+	padding-bottom: 24px;
 	padding-left: 38px;
 	padding-right: 41px;
-	margin: 0px;
-	margin-top: 22px;
-	text-align: center;
-	line-height: 21px;
-	
-	/* черточки "- №1 -" рисовать псевдоэлементами или просто текстом?*/
+}
+.reason:nth-child(1) p:nth-last-of-type(2),
+.reason:nth-child(5) p:nth-last-of-type(2),
+.reason:nth-child(6) p:nth-last-of-type(2),
+.reason:nth-child(7) p:nth-last-of-type(2),
+.reason:nth-child(8) p:nth-last-of-type(2){
+	padding-bottom: 20px;	
+}
+.reason  p:last-of-type{
+	padding-bottom: 0px;
+}
+
+.reason .reason_title{
+	font-weight: bold;
+	padding-left: 52px;
+	padding-right: 53px;
+
 }
 
 .reason  .icon{
-	margin: 0 auto;
-	width: 72px;
-	height: 75px;
-	margin-bottom: 30px;
+	width: 74px;
+	height: 76px;
+	padding-left: 90px;
+	padding-bottom: 29px;
+	text-align: right;
 }
 
 .reason_title{
@@ -272,15 +306,15 @@ main{
 .reason:nth-of-type(2),
 .reason:nth-of-type(3),
 .reason:nth-of-type(4){
-	padding-top: 60px;
-	padding-bottom: 65px;
+	padding-top: 55px;
+	padding-bottom: 62px;
 }
 
 .reason:nth-of-type(6),
 .reason:nth-of-type(7),
 .reason:nth-of-type(8){
 	padding-top: 48px;
-	padding-bottom: 42px;
+	padding-bottom: 37px;
 	background-color: #eeeeee;
 }
 
@@ -303,12 +337,13 @@ main{
 	/*как снять параметры текста для h2 и p с макета, если это единый блок?*/
 }
 .search_offers h2{
-	font-size: 21px;
+	font-size: 24px;
 	line-height: 24px;
 	margin: 0px;
 	padding-top: 55px;
 	padding-left: 25px;
 	padding-right: 25px;
+	font-weight: bold;
 
 	
 }
