@@ -113,17 +113,19 @@ header li:nth-last-child(2){
 footer{
 	font-size: 0px;
 	background-color: #ffffff;
+	opacity: 0.9;
 	padding-bottom: 40px;
 }
 
 footer .hashtag{
-	padding-top: 40px;
+	width: 246px;
+	padding-top: 45px;
 	padding-left: 60px;
-	padding-right: 60px;
 }
 footer .hashtag a{
 	display: block;
 	font-size: 21px;
+	line-height: 26px;
 	color: #000000;
 	font-weight: 700;
 	text-decoration: none;
@@ -131,17 +133,17 @@ footer .hashtag a{
 }
 
 footer .social{
-	width: 33.3%;
+	width: 234px;
 	font-size: 21px;
-	text-align: center;
-	padding-top: 30px;
+	padding-top: 36px;
 }
 
 footer .social .btn_social{
 	display: inline-block;
-	width: 43px;
-	height: 43px;
-	margin: 0 2px;
+	height: 48px;
+	padding-left: 24px;
+	padding-right: 23px;
+	margin: 0px;
 
 	font-size: 0;
 	vertical-align: top;
@@ -153,19 +155,19 @@ footer .social .btn_social{
 }
 
 .btn_social:first-of-type{
-	background-image: url("../img/footer-icon_facebook.png");
+	background-image: url("../img/footer-icon_twitter.png");	
 }
 .btn_social:nth-child(2){
-	background-image: url("../img/footer-icon_twitter.png");
+	background-image: url("../img/footer-icon_facebook.png");
 }
 .btn_social:nth-child(3){
 	background-image: url("../img/footer-icon_youtube.png");
 }
 
 footer .copyright{
-	width: 33.3%;
 	font-size: 0;
-	padding-top: 40px;
+	padding-top: 43px;
+	padding-left: 2px;
 	width: 159px;
 	height: 39px;
 }
@@ -223,9 +225,6 @@ main{
 .city_informaton{
 	font-size: 0px;
 }
-
-
-
 
 .reason{
 	width: 33.3%;
@@ -327,6 +326,7 @@ main{
 
 
 .search_offers{
+	position: relative;
 	background-color: white;
 	text-transform: uppercase;
 	text-align: center;	
@@ -337,31 +337,30 @@ main{
 	/*как снять параметры текста для h2 и p с макета, если это единый блок?*/
 }
 .search_offers h2{
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 28px;
 	margin: 0px;
 	padding-top: 55px;
 	padding-left: 25px;
 	padding-right: 25px;
+	padding-bottom: 28px;
 	font-weight: bold;
-
-	
 }
 .search_offers p{
 	font-size: 14px;
 	line-height: 24px;
-	padding-top: 34px;
+
 	padding-left: 67px;
 	padding-right: 67px;
-	padding-bottom: 50px;
+	padding-bottom: 47px;
 	margin: 0;
 }
 .search_offers_button {
 	display: inline-block;
-	padding: 30px 120px;
+
+	padding: 30px 139px;
 	font-weight: 700;
 	font-size: 21px;
-	line-height: 26px;
+	line-height: 25px;
 	color: #ffffff;
 	background-color: #766357;
 	border: none;
@@ -372,17 +371,143 @@ main{
 .offers .map{
 	background-color: orange;
 	width: 768px;
-	height: 593px;
+	height: 472px;
 }
+
+
+
 .form_search{
-	display: none;
+	position: absolute;
+	top: 291px;
+	left: 100px;
+	text-align: left;	
+
 	width: 568px;
 	min-height: 395px;
-	margin: 0 auto;
-	
-	background-color: black;
-	border: 1px solid white;
+	margin: 0;
+	padding: 0;
+	font-size: 0px;
+	background-color: #ffffff;
 }
+
+.booking_date{
+	margin: 0px;
+	padding-top: 55px;
+	padding-left: 54px;
+	padding-right: 54px;
+	padding-bottom: 54px;
+	font-weight: bold;
+	font-size: 0px;
+}
+
+.datein{
+	padding: 0px;
+	padding-bottom: 30px;
+}
+
+.calendar_label{
+	margin: 0px;
+	padding: 6px 0px;
+	font-size: 14px;
+	line-height: 26px;
+
+	color: #000000;
+	text-transform: uppercase;
+	width: 112px;
+	
+	vertical-align: middle;
+
+}
+.calendar_field{
+	position: relative;
+	margin: 0px;
+	padding: 6px 14px;
+	font-size: 14px;
+	line-height: 26px;
+
+	color: #000000;
+	text-transform: uppercase;
+	width: 319px;
+	
+	outline: none;
+	background-color: #f2f2f2;
+}
+
+.calendar{
+	position: absolute;
+	top: 8px;
+	right: -20px;
+	width: 50px;
+	height: 50px;
+	background: url('../img/main-icon_calendar.png') no-repeat;
+	cursor: pointer;
+}
+
+
+
+.people_count{	
+	font-size: 0px;
+	background-color: #f2f2f2;
+}
+.people_count .btn{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 8px;
+	width: 21px;
+	
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.people_count .btn:nth-child(2){
+	width: 25px;
+}
+
+.child_label{
+	margin: 0px;
+	padding-left: 55px;
+	padding-right: 25px;
+	font-size: 14px;
+
+	color: #000000;
+	text-transform: uppercase;
+
+	
+	vertical-align: middle;
+
+}
+
+.btn_start_search{
+	display: block;
+	margin: 0 auto;
+	padding: 14px 30px;
+	width: 460px;
+	
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #81b3d2;
+
+	outline: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -393,22 +518,33 @@ main{
 	font-size: 0px;
 	
 	background-image: url("../img/main-photo_canyon_blur.jpg");
-	background-position: top;
+	background-position: 0% 28%;
 	background-repeat: no-repeat;
+	
+	padding-bottom: 26px;
 }
 
 .hotel_ifrastructure{
-	width: 33.3%;
+	width: 256px;
 	margin: 0px;
 	padding: 0px;
 	color: #ffffff;
 	text-transform: uppercase;
 	line-height: 21px;
 }
+.hotel_ifrastructure:nth-child(1){
+	width: 210px;
+	padding-left: 46px;	
+}
+.hotel_ifrastructure:nth-child(2){
+	width: 210px;
+	padding-left: 30px;	
+}
 
 .hotel_ifrastructure p{	
+	padding: 0px;
 	padding-top: 28px;
-	padding-bottom: 28px;
+	padding-bottom: 24px;
 	font-size: 16px;
 	
 	font-weight: 700;
@@ -424,18 +560,24 @@ main{
 .hotel_ifrastructure ul li{
 	padding: 0;
 	margin: 0;
-	margin-bottom: 21px;
-	
+	margin-bottom: 20px;
+
+}
+.hotel_ifrastructure ul li:last-child{
+	margin-bottom: 0px;
 }
 
 .hotel_ifrastructure .filter_checkbox{
-	 position: relative;
+	position: relative;
 
 	padding-left: 41px;
 	color: #ffffff;
 	font-size: 14px;
 	text-transform: uppercase;
 	cursor: pointer;
+	
+
+
 }
 
 .filter_checkbox input[type="checkbox"] {
@@ -443,14 +585,14 @@ main{
 }
 .filter_checkbox input[type="checkbox"] + .checkbox_indicator {
 	position: absolute;
-	top: -5px;
+	top: -3px;
 	left: 0;
 
-	width: 17px;
-	height: 17px;
+	width: 16px;
+	height: 16px;
 
 	border: 3px solid #ffffff;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 .filter_checkbox input[type="checkbox"]:checked + .checkbox_indicator::before{
@@ -487,23 +629,30 @@ main{
 
 
 .hotel_cost{
-	width: 33.3%;	
+	width: 223px;	
 	color: #ffffff;
 	text-transform: uppercase;
 	line-height: 21px;
+
+	padding-left: 1px;
+	padding-top: 28px;
 }
 .range_filter p{
-	margin-bottom: 9px;
+	padding: 0px;
+	margin: 0px;
+	
+	padding-left: 2px;
+	padding-bottom: 10px;
 	font-size: 16px;
-	font-weight: 700;	
+	font-weight: 700;
 }
 
 .price_controls {
-	position: relative;
-	height: 36px;	
-	margin-bottom: 20px;	
+	position: relative;		
 	border: 2px solid #ffffff;
 	border-radius: 2px;
+	margin-bottom: 20px;
+	
 }
 
 .price_controls::after {
@@ -518,16 +667,20 @@ main{
 }
 
 .price_controls label {
+	margin: 0px;
+	padding:0px;
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 33px;
 	vertical-align: top;
 	cursor: pointer;
+	
+
 }
 
 .price_controls .min_price,
 .price_controls .max_price {
 	width: 20px;
-	padding-left: 40px;
+	padding-left: 38px;
 }
 
 .price_controls input {
@@ -544,6 +697,7 @@ main{
 .range_controls {
 	position: relative;
 	margin-bottom: 32px;
+	padding-left: 6px;
 }
 .range_controls .scale {
 	height: 2px;
@@ -571,16 +725,16 @@ main{
 }
 
 .min_toggle{
-	left: 0;
+	left: 6px;
 }
 .max_toggle{
-	left: 80%;
+	left: 162px;
 }
 
 .btn_transparent {
 	display: block;
 	margin: 0 auto;
-	padding: 6px 35px;
+	padding: 6px 30px;
 	
 	font-size: 14px;
 	line-height: 20px;
@@ -603,6 +757,7 @@ main{
 
 .hotel_result{
 	font-size: 0px;
+	padding-left: 46px;
 }
 
 .hotel_result .result{
@@ -637,9 +792,11 @@ main{
 }
 .hotel_result_sort a{
 	color: #b2b2b2;
+	border-bottom: 1px dotted #81b3d2;
 }
 .hotel_result_sort a:hover{
 	color: #81b3d2;
+	border-bottom: none;
 }
 
 .hotel_result_sort ul{
@@ -660,10 +817,10 @@ main{
 
 .sort_direction_up{
 	position: absolute;
-	top: 39px;
-	right: 6px;
-	width: 6px;
-	height: 15px;  
+	top: 38px;
+	right: 3px;
+	width: 2px;
+	height: 6px;  
 	background-color: #ffffff;
 	border: none;
 	outline: none;
@@ -672,18 +829,18 @@ main{
 .sort_direction_up:after{
 	content: '';  
 	position: absolute;
-	left: -4px; 
+	left: 1px; 
 	top: 1px;
-	border: 10px solid transparent; 
-	border-top: 15px solid #81b3d2;
+	border: 6px solid transparent;
+	border-top: 10px solid #81b3d2;
 }
 
 .sort_direction_down{
 	position: absolute;
-	top: 39px;
-	right: 34px;
-	width: 6px;
-	height: 15px;  
+	top: 44px;
+	right: 25px;
+	width: 2px;
+	height: 6px;  
 	background-color: #ffffff;
 	border: none;
 	outline: none;
@@ -692,14 +849,11 @@ main{
 .sort_direction_down:after{
 	content: '';  
 	position: absolute;
-	left: -4px; 
+	left: 0px; 
 	top: -10px;
-	border: 10px solid transparent; 
-	border-bottom: 15px solid #cccccc;
+	border: 6px solid transparent; 
+	border-bottom: 10px solid #cccccc;
 }
-
-
-
 
 
 .hotel_catalog .hotel{
@@ -708,35 +862,38 @@ main{
 	background-color: white;
 	border-bottom: 1px solid #e5e5e5;
 	border-top: 1px solid #e5e5e5;
+	
+
 }
 
 .hotel .hotel_photo{
 	width: 151px;
 	height: 90px;
 	padding-top: 30px;
-	padding-bottom: 30px;
 
+	padding-left: 44px;
 }
 .hotel .hotel_offer{
-	width: 356px;
-	min-height: 150px;
+	width: 400px;
 	font-size: 14px;
 	padding-left: 15px;
+	padding-top: 25px;
+	
 }
 .hotel_offer .hotel_name{
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: 700;
+	font-weight: bold;
 	text-transform: uppercase;
-	margin-top: 28px;
 	padding: 0;
+	padding-bottom: 7px;
 }
 .hotel_offer .cost{
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
-	margin-top: 16px;
 	padding: 0;
+	padding-bottom: 14px;
 }
 .hotel_offer .type{
 	width: 115px;
@@ -745,12 +902,11 @@ main{
 }
 
 .hotel_offer .control{
-	margin-top: 17px;
 	padding: 0;
 }
 .hotel_offer .control_btn{
 	display: inline-block;
-	padding: 7px 17px;
+	padding: 3px 17px;
 
 	font-weight: 700;
 	font-size: 14px;
@@ -769,21 +925,20 @@ main{
 }
 
 .hotel .rating{
-	width: 154px;
-	min-height: 150px;
+	width: 110px;
 	font-size: 14px;
 	text-align: right;
+	padding-top: 29px;
 }
-.hotel .rating .star{	
-	margin-top: 28px;
+
+.rating .star{
+	padding-bottom: 44px;
 }
 
 .hotel .rating .number{
-	margin-top: 46px;
-
 	display: inline-block;
-	padding: 4px 16px;
-
+	padding: 2px 10px;
+	
 	font-size: 14px;
 	line-height: 21px;
 	color: #666666;
@@ -794,6 +949,7 @@ main{
 	border: none;
 	outline: none;
 }
+
 
 
 
