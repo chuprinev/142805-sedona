@@ -44,9 +44,13 @@ header{
 
 header .logo{
 	position: absolute;
-	width: 138px;
+	
 	left:50%; 
 	margin-left:-69px;
+}
+header .logo a{
+	margin: 0px;
+	width: 138px;
 }
 
 header nav{
@@ -190,12 +194,32 @@ footer .social .btn_social:active{
 	background-image: url("../img/footer-icon_youtube.png");
 }
 
+.btn_social:first-of-type:active{
+	background-image: url("../img/footer-icon_twitter_dark.png");
+}
+.btn_social:nth-child(2):active{
+	background-image: url("../img/footer-icon_facebook_dark.png");
+}
+.btn_social:nth-child(3):active{
+	background-image: url("../img/footer-icon_youtube_dark.png");
+}
+
+
 footer .copyright{
 	font-size: 0;
 	width: 256px;
 	height: 39px;	
 
 	vertical-align: middle;
+	background-image: url("../img/footer-copyright.png");
+	background-position: bottom, top;
+	background-repeat: no-repeat;
+}
+footer .copyright:hover{
+	background-image: url("../img/footer-copyright_blue.png"); 
+}
+footer .copyright:active{
+	background-image: url("../img/footer-copyright_gray.png");
 }
 
 
@@ -474,6 +498,11 @@ main{
 	padding: 4px 12px;
 	border:2px solid #f2f2f2;
 }
+.calendar_field:focus{
+	background: #ffffff;
+	padding: 4px 12px;
+	border:2px solid #f2f2f2;
+}
 
 .calendar{
 	position: absolute;
@@ -485,8 +514,10 @@ main{
 	cursor: pointer;
 }
 .calendar:hover{
+	background: url('../img/main-icon_calendar_black.png') no-repeat;
 }
 .calendar:active{
+	background: url('../img/main-icon_calendar_blue.png') no-repeat;
 }
 
 .people_label{
@@ -794,11 +825,14 @@ main{
 	top: -9px;
 	width: 4px;
 	height: 4px;
-	background: #ababab;
+	background: #dcdcdc;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
+}
+.toggle:hover{
+	background: #9ab0c6;
 }
 .range-toggle:hover {
 	background: #1c4f80;
@@ -1080,8 +1114,6 @@ main{
 
 .rating .star{
 	padding-bottom: 44px;
-
-
 }
 
 .hotel .rating .number{
