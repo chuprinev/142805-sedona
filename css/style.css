@@ -48,10 +48,19 @@ header .logo{
 	left:50%; 
 	margin-left:-69px;
 }
+header .link_disabled{	
+	pointer-events: none; 
+}
 header .logo a{
 	margin: 0px;
 	width: 138px;
+	cursor: default;
 }
+
+
+ 
+ 
+ 
 
 header nav{
 	background-color: #ffffff;
@@ -464,19 +473,40 @@ main{
 
 .calendar_label{
 	position: relative;
+    display: block;
+    width: 100%;
 	margin: 0px;
 	padding: 0px;
+    width: 100%;
 	font-size: 14px;
 	line-height: 26px;
 
 	color: #000000;
 	text-transform: uppercase;
-	
+  
 	vertical-align: middle;
 }
+.calendar_label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 7px;
+    right: 7px;
+    background: url('../img/main-icon_calendar.png') no-repeat;
+    cursor: pointer;
+}
+.calendar_label:hover:after {
+    background: url('../img/main-icon_calendar_black.png') no-repeat;
+}
+.calendar_label:active:after {
+    background: url('../img/main-icon_calendar_blue.png') no-repeat;
+}
+
 .calendar_field{
 	margin: 0px;
-	padding: 6px 14px;
+	padding: 4px 12px;
 	font-size: 14px;
 	line-height: 26px;
 
@@ -488,6 +518,7 @@ main{
 	outline: none;
 	border: none;
 	background-color: #f2f2f2;
+	border:2px solid #f2f2f2;
 }
 
 .calendar_field:hover{
@@ -502,22 +533,6 @@ main{
 	background: #ffffff;
 	padding: 4px 12px;
 	border:2px solid #f2f2f2;
-}
-
-.calendar{
-	position: absolute;
-	top: -31px;
-	left: 431px;
-	width: 22px;
-	height: 21px;
-	background: url('../img/main-icon_calendar.png') no-repeat;
-	cursor: pointer;
-}
-.calendar:hover{
-	background: url('../img/main-icon_calendar_black.png') no-repeat;
-}
-.calendar:active{
-	background: url('../img/main-icon_calendar_blue.png') no-repeat;
 }
 
 .people_label{
@@ -547,6 +562,11 @@ main{
 	font-size: 0px;
 	background-color: #f2f2f2;
 	vertical-align: middle;
+	border: 2px solid #f2f2f2;
+}
+
+.people_count:hover{
+	background-color: #ffffff;
 }
 
 .people_label .people_count{
@@ -561,8 +581,8 @@ main{
 	vertical-align: top;
 	text-align: center;
 	padding: 8px;
-	width: 21px;
-	height: 21px;
+	width: 19px;
+	height: 19px;
 	
 	font-size: 14px;
 	line-height: 20px;
@@ -574,8 +594,9 @@ main{
 	outline: none;
 }
 .people_count .btn:nth-child(2){
-	width: 23px;
+	width: 21px;
 	padding-top: 7px;
+	color: #000000;
 }
 .people_count .btn:hover{
 	color: #292929;
